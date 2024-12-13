@@ -9,7 +9,6 @@ import Icon from "../util-components/Icon";
 import IntlMessage from "../util-components/IntlMessage";
 
 const { SubMenu } = Menu;
-const { useBreakpoint } = Grid;
 
 const setLocale = (isLocaleOn, localeKey) =>
   isLocaleOn ? <IntlMessage id={localeKey} /> : localeKey.toString();

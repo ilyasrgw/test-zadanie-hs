@@ -16,7 +16,7 @@ import { useEffect, useState } from "react";
 const UserList = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [userProfileVisible, setUserProfileVisible] = useState(false);
+  const [setUserProfileVisible] = useState(false);
   const [editModalVisible, setEditModalVisible] = useState(false);
   const [selectedUser, setSelectedUser] = useState(null);
   const [form] = Form.useForm();
@@ -51,11 +51,6 @@ const UserList = () => {
   const showUserProfile = (userInfo) => {
     setSelectedUser(userInfo);
     setUserProfileVisible(true);
-  };
-
-  const closeUserProfile = () => {
-    setUserProfileVisible(false);
-    setSelectedUser(null);
   };
 
   const openEditModal = (userInfo) => {
