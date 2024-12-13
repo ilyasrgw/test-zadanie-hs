@@ -1,4 +1,4 @@
-import { Grid, Menu } from "antd";
+import { Menu } from "antd";
 import navigationConfig from "configs/NavigationConfig";
 import { NAV_TYPE_SIDE, SIDE_NAV_LIGHT } from "constants/ThemeConstant";
 import { useState } from "react";
